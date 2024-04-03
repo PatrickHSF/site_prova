@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professor Patrick</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tema escuro personalizado -->
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+    .card {
+      background-color: #333333;
+      color: #ffffff;
+    }
+    .card-header {
+      background-color: #222222;
+      border-bottom: 1px solid #444444;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Professor Patrick - Pensamento Computacional</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicío <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Alura</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Scratch</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+
+<div class="container mt-4">
+    <div class="row">
+      <form>
+          <div class="form-group">
+              <label for="turma">Selecione sua Turma</label>
+              <select id="opcoes" class="form-control">
+              <option selected value="">Selecione sua Turma</option>
+              <option value="div1">8ª Ano Ensino Fundamental</option>
+              <option value="div2">9ª Ano Ensino Fundamental</option>
+              <option value="div3">1ª Ano Ensino Médio</option>
+            </select>
+          </div>
+      </form>     
+  </div>
+  </div>
+
+  <div class="container mt-4">
+      <div class="">
+        <div id="div1" class="hidden">
+          <div class="card">
+            <div class="card-header">
+              8ª Ano Ensino Fundamental
+            </div>
+            <div class="card-body">
+              <p class="card-text">Atenção, verifique se você realmente pertence a essa turma</p>
+              <a href="#" class="btn btn-primary">Iniciar Avaliação</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div id="div2" class="hidden">
+          <div class="card">
+            <div class="card-header">
+              9ª Ano Ensino Fundamental
+            </div>
+            <div class="card-body">
+              <p class="card-text">Atenção, verifique se você realmente pertence a essa turma</p>
+              <a href="#" class="btn btn-primary">Iniciar Avaliação</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <div id="div3" class="hidden">
+          <div class="card">
+            <div class="card-header">
+              1ª Ano Ensino Médio
+            </div>
+            <div class="card-body">
+              <p class="card-text">Atenção, verifique se você realmente pertence a essa turma</p>
+              <a href="#" class="btn btn-primary">Iniciar Avaliação</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    const opcoes = document.getElementById('opcoes');
+    const divs = document.querySelectorAll('div[id^="div"]');
+    
+    opcoes.addEventListener('change', function() {
+      const selectedOption = opcoes.value;
+      divs.forEach(div => {
+        if (div.id === selectedOption) {
+          div.classList.remove('hidden');
+        } else {
+          div.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
