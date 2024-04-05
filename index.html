@@ -89,7 +89,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz7yWGfe8sS4_w11noLGukub4R7tExxdfRbTZt05qdRrbpBQ/viewform?usp=sf_link" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="8a">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -103,7 +103,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0dsACKYOqrGyhdJs5UrSS2cPPrF6qemOGxh22sJp0oNaP7g/viewform?usp=sf_link" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="8b">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6kDSskmTXUpFYIvyetAEJxtcFpPw7YWKICKV1L_Iq2vN-fw/viewform?usp=sf_link" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="8c">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSddB_LJVqWP_RYmNBsjcp3ecFTVnVd14uRXSZ9dAPi4jW9hdQ/viewform?usp=sf_link" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="8d">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_J-wilZGUrE_ndkuPJVQGa2qL0inwGLX4WS16lkl6nZBnrA/viewform?usp=sf_link" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="8e">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="#" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="9a">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="#" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="9b">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="#" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="9c">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@
             <div class="card-body">
               <div class="p-2 mb-1 bg-danger text-white">ATENÇÃO</div>
               <p class="card-text">Verifique se você realmente pertence a essa turma</p>
-              <a href="#" class="btn btn-success">Iniciar Avaliação</a>
+              <button class="btn btn-success" id="9d">Iniciar Avaliação</button>
             </div>
           </div>
         </div>
@@ -222,7 +222,99 @@
         }
       });
     });
+
+   
+    document.getElementById("8a").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento8a") {
+          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdz7yWGfe8sS4_w11noLGukub4R7tExxdfRbTZt05qdRrbpBQ/viewform?usp=sf_link";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("8b").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento8b") {
+          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc0dsACKYOqrGyhdJs5UrSS2cPPrF6qemOGxh22sJp0oNaP7g/viewform?usp=sf_link";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+   
+    document.getElementById("8c").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento8c") {
+          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd6kDSskmTXUpFYIvyetAEJxtcFpPw7YWKICKV1L_Iq2vN-fw/viewform?usp=sf_link";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("8d").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento8d") {
+          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSddB_LJVqWP_RYmNBsjcp3ecFTVnVd14uRXSZ9dAPi4jW9hdQ/viewform?usp=sf_link";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("8e").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento8e") {
+          window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSc_J-wilZGUrE_ndkuPJVQGa2qL0inwGLX4WS16lkl6nZBnrA/viewform?usp=sf_link";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("9a").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento9a") {
+          window.location.href = "";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("9b").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento9b") {
+          window.location.href = "";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("9c").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento9c") {
+          window.location.href = "";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
+    
+    document.getElementById("9e").addEventListener("click", function() {
+      var senha = prompt("Por favor, insira a senha da turma:");
+      if (senha === "bento9e") {
+          window.location.href = "";
+      } else {
+          alert("Senha incorreta. Tente novamente.");
+      }
+    });
+
   </script>
+
 
   <!-- jQuery and Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -230,4 +322,3 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
